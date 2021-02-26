@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles/global.css">
+      <link rel="stylesheet" href="styles/index.css">
+      <title>Entelgy - Retro FrontEnd</title>
+  </head>
+  <body>
+    <div class='header'>
+      <div class='logo'>
+        <img src='assets/logo/countries.jpg' alt='Países' />
+        <div class='title'>Países del mundo</div>
+      </div>
+      <ul>
+        <li onclick="handleFocusDiv('homepage')">Inicio</li>
+        <li onclick="handleFocusDiv('countries')">Países</li>
+      </ul>
+    </div>
+    <div class='content'>
+      <div class='mainContent'>
+        <div class='homepage' id='homepage' tabindex="1">
+          <div class='textPrincipal'>Listado de países</div>
+          <div class='seeMore' onclick="handleFocusDiv('countries')">Ver más</div>
+        </div>
+        <div class='countries' id='countries' tabindex="1">
+          <div class='subTitle'>Países</div>
+          <div class="list" id='listCountries'></div>
+        </div>
+        
+      </div>
+    </div>
+    <div id='footer'>
+    </div>
+    <div class='bottom'>
+
+    </div>
+    <div id="modal">
+      <div class="wrapper">
+        <div class="headerWrapper">
+          <div id="modalHeader"></div>
+        </div>
+        <div class="bodyWrapper">
+          <div class="inputWrapper">
+            <div class="label">Región:</div>
+            <div id="region"></div>
+          </div>
+          <div class="inputWrapper">
+            <div class="label">SubRegión:</div>
+            <div id="subRegion"></div>
+          </div>
+        </div>
+        <div class="footerWrapper">
+          <button onclick="handleClickClose()">Cerrar</button>
+        </div>
+        
+      </div>      
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+.header {
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  background-color: #256095;
+  color: #fff;
+  display: flex;
+  height: 9%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  padding-left: 100px;
+}
+
+.logo .title {
+  font-size: 25px;
+}
+
+.logo img{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.header ul {
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: flex-end;  
+  list-style: none;
+  padding-right: 100px;
+}
+
+.header ul li {
+  cursor: pointer;
+}
+
+.content {
+  height: 91%;
+}
+
+.homepage{ 
+  align-items: center; 
+  background-color: #256095;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 88vh;
+  justify-content: center;
+  padding: 10px;
+}
+
+.homepage .textPrincipal {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-size: 80px;
+}
+
+.homepage .seeMore {
+  cursor: pointer;
+}
+
+.countries {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.countries .subTitle {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+}
+
+.countries .list {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  pointer-events: all;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0, 0.65);
+}
+
+#modal .wrapper {
+  margin: 0px auto;
+  width: 37%;
+  position: relative;
+  top: 38%;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.wrapper .bodyWrapper {
+  background-color: #fff;  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 23px;
+}
+.label {
+  font-weight: bold;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper .headerWrapper {
+  text-align: center;
+  background-color: #256095;
+  color: #fff;
+  padding: 10px;
+}
+
+.wrapper .footerWrapper {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: flex-end;
+  padding: 7px;
+}
+
+.footerWrapper button {
+  cursor: pointer;
+}
